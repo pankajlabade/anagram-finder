@@ -10,21 +10,21 @@ JUnit 5.7.0 or higher
 
 To run the program, use the following command:
 
-1. With dictionary-file-path as argument. dictionary-file-path is the path to a file containing a list of words, one per line.
-  java -jar AnagramFinder.jar <dictionary-file-path>
+1. Without argument which takes default file words-utf8.txt
 
-  For example, to find anagrams from the test.txt file, run the following command:
+    java -jar AnagramFinder.jar
+  
+            OR 
+            
+2. With user-input-file-path as argument. user-input-file-path is the path to a file containing a list of words, one per line.
+   For example, to find anagrams from the test.txt file, run the following command:
 
   java -jar AnagramFinder.jar test.txt
 
-OR
-
-2. Without argument which takes default file words-utf8.txt
-
-  java -jar AnagramFinder.jar
 
 
-Running the Tests : 
+  Running the Tests : 
+
 To run the JUnit tests, navigate to the project directory and run the following command:
 
 java -jar junit-platform-console-standalone-1.9.2.jar -cp . --scan-classpath
